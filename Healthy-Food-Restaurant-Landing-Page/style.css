@@ -1,0 +1,1170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ############################# Utility Class ############################## */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* --------------- utility class --------------- */
+
+.red-color {
+  color: #e63946;
+}
+
+.light-color {
+  color: aliceblue;
+}
+
+.white-color {
+  color: white;
+}
+
+.black-color {
+  color: #262525c9;
+}
+
+.gray-color {
+  color: #848484;
+}
+
+.dark-color {
+  background: #263238;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85em 2.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #15977b;
+}
+
+/* ############################# navbar styling ############################## */
+
+/* for desktop mode */
+
+.navbar input[type="checkbox"],
+.navbar .humburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.logo {
+  order: 1;
+  font-size: 3rem;
+}
+
+.navbar a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #094669;
+}
+
+/* ############################# Showcase styling ############################## */
+
+.showcase-area {
+  height: 50vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.436)
+    ),
+    url(img/food\ background.jpg);
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1em 1.5em;
+  margin: 0.5em 0;
+}
+
+.btn-primary {
+  border: 2px solid rgb(237, 237, 237);
+  border-radius: 10em;
+  background: whitesmoke;
+}
+
+.btn-primary:hover {
+  background: #ddd;
+}
+
+.btn-secondary {
+  border: 2px solid #e63946;
+  border-radius: 2.5em;
+  color: #e63946;
+  background: #fff;
+}
+
+.btn-secondary:hover {
+  background: #fcf3f2;
+}
+
+/* --------------- header styling --------------- */
+
+header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.showcase-container .main-title {
+  text-transform: uppercase;
+}
+
+/* ############################# About Us styling ############################## */
+
+#about {
+  padding: 50px 0px;
+  background: #ffffff;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-size: 3.2rem;
+}
+
+#about p {
+  font-size: 1.6rem;
+  color: #555;
+}
+
+#about .small {
+  font-size: 1.6rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translateX(-150%);
+  animation: about-text-animation 3s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 3s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ############################# food types styling ############################## */
+
+#food {
+  padding: 5rem 0 10rem 0;
+}
+
+#food h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-container img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-container {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.img-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.img-content h3 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.img-content a {
+  font-size: 1.2rem;
+}
+
+.img-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.731);
+  opacity: 0;
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.img-container:hover .img-content {
+  opacity: 1;
+  top: 50%;
+}
+
+/* ############################# food menu styling ############################## */
+
+.food-menu-heading {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 400;
+  color: #666;
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.food-menu-item {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+.food-description {
+  margin: auto 1.5rem;
+}
+
+.food-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #444;
+}
+
+.food-description p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.food-description .food-price {
+  color: #117964;
+  font-weight: 700;
+}
+
+/* ############################# testimonials styling ############################## */
+
+#testimonials {
+  padding: 5rem 0rem;
+  background: #f3f3f3;
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.testimonial-box .checked {
+  color: #ff9529;
+}
+
+.testimonial-box .testimonial-text {
+  margin: 1rem 0;
+  color: #444;
+}
+
+.testimonial-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customer-photo img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+}
+
+/* ############################# contact us styling ############################## */
+
+#contact {
+  padding: 5rem 0;
+  background: rgba(226, 226, 226);
+}
+
+.contact-container {
+  display: flex;
+  background: #fff;
+}
+
+.contact-image {
+  width: 50%;
+}
+
+.contact-image img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.form-container {
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+}
+
+.form-container input {
+  display: block;
+  padding: 1rem 0;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.form-container textarea {
+  display: block;
+  padding: 1rem 0;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+}
+
+.form-container h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.form-container a {
+  font-size: 1.2rem;
+}
+
+/* ############################# footer styling ############################## */
+
+#footer h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(65, 65, 65);
+}
+
+/* ############################# media queris styling ############################## */
+
+@media (max-width: 768px) {
+  .navbar {
+    opacity: 0.95;
+  }
+  .navbar-container input[type="checkbox"],
+  .navbar-container .humburger-lines {
+    display: block;
+  }
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 40px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+  .navbar-container .humburger-lines {
+    display: block;
+    height: 32px;
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .navbar-container .humburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #aaa;
+  }
+  .navbar-container .humburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .navbar-container .humburger-lines .line2 {
+    transition: transform 0.1s ease-in-out;
+  }
+  .navbar-container .humburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translateX(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0 10px 0 #aaa;
+  }
+  .navbar .menu-items li {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 3rem;
+  }
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  .navbar-container input[type="checkbox"]:checked ~ .humburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  .navbar-container input[type="checkbox"]:checked ~ .humburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  .navbar-container input[type="checkbox"]:checked ~ .humburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  /* ############################# food types styling ############################## */
+  .food-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .food-type:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  .food-type {
+    box-shadow: 5px 0 10px 0 #aaa;
+  }
+  .img-container {
+    margin: 0;
+  }
+}
+
+/* ############################# small screen styling ############################## */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+  .testimonial-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .food-menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .food-menu-container img {
+    margin: auto;
+  }
+  .form-container {
+    width: 90%;
+  }
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-image {
+    width: 90%;
+    margin: 3rem auto;
+  }
+}
+
+/* ############################# slandscape mode styling ############################## */
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .showcase-area {
+    height: 50vmax;
+  }
+  nav {
+    padding: 1rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 0.3em;
+}
+
+li,
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.3em;
+  line-height: 1.25em;
+  margin-top: 0.5em;
+  list-style-type: none;
+}
+
+nav h1 {
+  float: left;
+}
+
+nav ul.item-list {
+  float: right;
+  list-style-type: none;
+  margin-top: 0.05em;
+}
+
+nav.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+a:link {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* --------------- header styling --------------- */
+
+.header-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.header-content h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header-content p {
+  text-transform: uppercase;
+}
+
+/* --------------- section styling --------------- */
+
+.showcase {
+  padding: 10rem 0;
+  background: #ddd;
+}
+
+.row {
+  height: 350px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.row-1 {
+  margin-bottom: 10rem;
+}
+
+.row-1 .img-box,
+.row-2 .text-box {
+  float: left;
+  width: 50%;
+}
+
+.row-2 .img-box,
+.row-1 .text-box {
+  float: right;
+  width: 50%;
+}
+
+.img-box {
+  height: 100%;
+}
+
+.img-box img {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-box {
+  height: 100%;
+  padding: 3rem;
+}
+
+/* --------------- features styling --------------- */
+
+.feature {
+  padding: 10rem 0;
+  background: #fff;
+}
+
+.wrapapper-box {
+  box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+}
+
+.wrapapper-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.box {
+  padding: 3rem;
+  height: 250px;
+  width: 33.333333%;
+  text-align: center;
+  float: left;
+}
+
+.box-1,
+.box-3 {
+  background-color: #263238;
+  color: #fff;
+}
+
+.box-2 {
+  background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+  color: #fff;
+}
+
+/* --------------- footer styling --------------- */
+
+footer {
+  background: #263238;
+  color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+.social-media-links i {
+  margin: 2rem;
+}
+
+/* --------------- about us styling --------------- */
+
+.about {
+  padding: 5rem 0;
+}
+
+.about-heading::after {
+  content: " ";
+  border: 3px solid #e63946;
+  width: 100%;
+  display: block;
+}
+
+.about-wrapper {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.about-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.about-wrapper li::before {
+  content: "\2713";
+  color: #e63946;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.left {
+  width: 50%;
+  float: left;
+}
+
+.right {
+  width: 50%;
+  float: right;
+}
+
+/* --------------- count styling --------------- */
+
+.counts {
+  margin: 3rem;
+  text-align: center;
+}
+
+.counts::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.count-item {
+  float: left;
+  width: 25%;
+}
+
+.counts span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #e63946;
+}
+
+.counts p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #263238;
+}
+
+/* --------------- cta styling --------------- */
+
+.cta-banner {
+  background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+  padding: 1rem;
+  color: #f4f4f4;
+  box-shadow: 5px 5px 10px #00000057;
+  margin-top: 3rem;
+}
+
+.cta-banner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cta-banner-left {
+  float: left;
+  width: 60%;
+}
+
+.cta-banner-right {
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+
+.cta-line {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+.btn-cta {
+  font-size: 3rem;
+  font-weight: 700;
+  border: 4px solid white;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.3rem 2.5rem;
+}
+
+/* --------------- contact styling --------------- */
+
+.contact {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.contact-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.contact-info {
+  height: 600px;
+  width: 49%;
+  float: left;
+  padding: 1rem;
+  background: #fff;
+}
+
+.info-wrapper i {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
+.info-wrapper h2 {
+  display: inline-block;
+  color: #848484;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.info-wrapper {
+  margin-bottom: 2rem;
+}
+
+.contact-info img {
+  max-width: 90%;
+  min-height: 30rem;
+  object-fit: cover;
+  object-position: right;
+}
+
+/* --------------- form styling --------------- */
+
+.contact-form {
+  width: 49%;
+  float: right;
+  background: #fff;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.contact-me {
+  margin-bottom: 0.7rem;
+}
+
+.form .contact-me label {
+  display: block;
+}
+
+.form .contact-me label::after {
+  content: "*";
+  color: #e63946;
+}
+
+.form .contact-me input {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.form .contact-me textarea {
+  width: 100%;
+  padding: 1rem;
+  height: 250px;
+}
+
+.from-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 2.5rem;
+  background: #e63946;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* --------------- media query styling --------------- */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar h1,
+  .navbar .item-list {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .header-content h1 {
+    display: none;
+  }
+  .row {
+    height: auto;
+    width: 100%;
+  }
+  .row .img-box,
+  .row .text-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .feature .box {
+    float: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+  }
+  .box-2,
+  .box-3 {
+    margin-top: 5rem;
+  }
+  .wrapapper-box {
+    box-shadow: none;
+  }
+  .cta-banner-left,
+  .cta-banner-right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-info,
+  .contact-form {
+    float: none;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .form .contact-me label {
+    margin-bottom: 0.15rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+  .navbar h1,
+  .navbar .item-list {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .row {
+    height: auto;
+    width: 100%;
+  }
+  .row .img-box,
+  .row .text-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .feature .box {
+    float: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.521);
+  }
+  .box-2,
+  .box-3 {
+    margin-top: 5rem;
+  }
+  .wrapapper-box {
+    box-shadow: none;
+  }
+  .cta-banner-left,
+  .cta-banner-right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-info,
+  .contact-form {
+    float: none;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .form .contact-me label {
+    margin-bottom: 0.15rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+  .box h2 {
+    font-size: 2.5rem;
+  }
+  .row h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  header {
+    height: 90vmax;
+  }
+}
