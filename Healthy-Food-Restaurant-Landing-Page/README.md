@@ -38,7 +38,7 @@ This project is a fully responsive landing page for a restaurant that focuses on
 
 ## Website
  
-**Link:** https://world-travel-landing-page.netlify.app
+**Link:** https://healthy-food-restaurant-landing-page.netlify.app
 
 ## Contact
 
