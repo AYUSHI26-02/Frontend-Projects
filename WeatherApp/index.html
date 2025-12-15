@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="N1SfDYRO0wcMWK2rscZjHLeU84wlkbtF_SrlnDCgznc" />  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weatherly - Weather App</title>
+  <meta name="google-site-verification" content="N1SfDYRO0wcMWK2rscZjHLeU84wlkbtF_SrlnDCgznc" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Weather video inside the container -->
+    <div id="weatherVideoContainer">
+      <video id="clearVideo" class="bg-video" autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/2757265/2757265-sd_640_360_30fps.mp4" type="video/mp4" />
+      </video>
+      <video id="rainVideo" class="bg-video" autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/6190836/6190836-sd_640_360_30fps.mp4" type="video/mp4" />
+      </video>
+      <video id="snowVideo" class="bg-video" autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/6620517/6620517-sd_960_506_25fps.mp4" type="video/mp4" />
+      </video>
+      <video id="cloudVideo" class="bg-video" autoplay muted loop>
+        <source src="https://videos.pexels.com/video-files/1869959/1869959-sd_640_360_25fps.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay"></div>
+
+    </div>
+
+    <!-- Weather app UI -->
+    <header>
+      <h1>Weather App</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <div class="search-box">
+      <input id="cityInput" type="text" placeholder="Enter city..." />
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <div id="weatherInfo" class="weather-info"></div>
+    <div id="forecast" class="forecast-grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
