@@ -57,6 +57,11 @@ Each project is designed to improve UI skills, DOM manipulation, API usage, and 
       <td>Image Gallery App</td>
       <td align="center"><a href="https://image-gallery-website-js.netlify.app" target="_blank">Live Demo</a></td>
     </tr>
+    <tr>
+      <td align="center">8</td>
+      <td>Quote Generator</td>
+      <td align="center"><a href="https://quotes-generator-web.netlify.app" target="_blank">Live Demo</a></td>
+    </tr>
   </tbody>
 </table>
 
